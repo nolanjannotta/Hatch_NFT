@@ -4,9 +4,9 @@ randomly chooses an amount of minutes within the range. The initial URI is set t
 incubation period, the NFT owner can call the HatchNft function which uses another random number to pick a random creature URI, thus "hatching" your NFT. 
 
 TODO:
-[] experiment with chainlink Keepers to automatically hatch the NFT.
-[] experiment with Gelato for the same thing
-[] add flexibilty for the incubation period (hours or days)
-[] clean up code
-[] write tests
-[] create simple front end
+1. [] experiment with chainlink Keepers to automatically hatch the NFT.
+2. [] experiment with Gelato for the same thing
+3. [] add flexibilty for the incubation period (hours or days)
+4. [] clean up code
+5. [] write tests
+6. [] create simple front end
