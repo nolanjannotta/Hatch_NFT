@@ -56,6 +56,7 @@ contract HatchNFT is ERC721URIStorage, VRFConsumerBase {
     }
  
     function hatchNft(uint _tokenId) public {
+        require(ownerOf(_tokenId) == msg.sender, "you cant hatch this NFT");
         require(!idToHatched[_tokenId], "this creature has already hatched");
         require(block.timestamp >= tokenIdToHatchTime[_tokenId], "this creature is not ready to hatch yet :(");
         require(tokenIdToHatchTime[_tokenId] != 0, "this creature is not ready to hatch yet :(");
